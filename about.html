@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Vaishnavi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: pink;
+            color: rgb(14, 7, 7);
+            font-family: "Playfair Display", serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: bisque;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(14, 7, 7);
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 192, 203, 0.506);
+            color: rgb(14, 7, 7);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        hr {
+            border: 0;
+            background-color: bisque;
+            height: 3px;
+            margin: 30px 74px;
+        }
+
+        .left {
+            font-size: 1.7rem;
+        }
+
+        .aboutSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .aboutSection h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .aboutSection h2 {
+            text-align: left;
+            margin: 0 60px 15px;
+        }
+
+        .aboutSection p {
+            font-size: 1.2rem;
+            max-width: 100%;
+            text-align: justify;
+            margin: 0 60px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            max-width: 80vw;
+            background-color: rgba(255, 228, 196, 0.785);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 3px rgb(230, 227, 227);
+        }
+
+        footer {
+            background-color: bisque;
+            margin: 20px 0 0 0;
+        }
+
+        .footer {
+            display: flex;
+            padding: 10px 130px;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 190px 0 0 0;
+        }
+
+        .footersecond {
+            text-align: right;
+        }
+
+        span.black {
+            font-weight: bold;
+        }
+
+        main {
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 430px) {
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: bisque;
+                flex-direction: column;
+            }
+
+            .left {
+                font-size: 1.5rem;
+            }
+
+            .aboutSection h1 {
+                font-size: 2rem;
+            }
+
+            .aboutSection p {
+                font-size: 1rem;
+                max-width: 90%;
+            }
+
+            .footer {
+                display: flex;
+                padding: 15px 80px;
+                justify-content: space-evenly;
+                margin: 320px 0 0 0;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            hr:nth-child(4) {
+                display: none;
+            }
+
+            hr {
+                border: 0;
+                background-color: bisque;
+                height: 3px;
+                margin: 30px 44px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><span class="black">VAISHNAVI VINAYKUMAR GURRAM</span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="aboutSection">
+            <h1>About Me</h1>
+            <div class="content">
+                <h2>My Background</h2>
+                <p>Hello! I'm <strong>Vaishnavi Vinaykumar Gurram</strong>, currently a second-year B.Tech Computer
+                    Science and Engineering student from MGM's College of Engineering, Nanded.</p>
+
+                <h2>My Journey in Web Development</h2>
+                <p>I started learning HTML and CSS during my second year in college and have been passionate about web
+                    development ever since. I love creating visually appealing and user-friendly websites. My first
+                    major project was this portfolio, which taught me a lot about responsive design and effective web
+                    development practices.</p>
+
+                <h2>Values and Philosophy</h2>
+                <p>I believe in continuous learning and improvement. My philosophy is to approach every project with
+                    dedication and an open mind, always aiming to learn something new. I value collaboration and believe
+                    that great ideas often come from working with others.</p>
+
+                <h2>Future Aspirations</h2>
+                <p>In the near future, I aim to secure internships that allow me to apply and expand my web development
+                    skills. Long-term, I aspire to become a full-stack developer and contribute to innovative projects
+                    that make a difference.</p>
+
+                <h2>Contact Me</h2>
+                <p>Feel free to <a href="contact.html">get in touch</a> if you'd like to discuss web development,
+                    potential collaborations, or just want to connect!</p>
+            </div>
+        </section>
+    </main>
+    <hr class="footer-hr"> <!-- New hr element -->
+    <footer>
+        <div class="footer">
+            <div class="footerfirst">
+                <h3>Vaishnavi's Developer Portfolio</h3>
+            </div>
+            <br>
+            <br>
+            <div class="footersecond">
+                www.vaishnavisportfolio.com | All rights reserved
+                <br>
+                &copy; 2024 Vaishnavi Vinaykumar Gurram
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
